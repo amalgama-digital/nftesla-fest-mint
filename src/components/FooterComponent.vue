@@ -19,6 +19,12 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 760px) {
+    .footer {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+}
 .footer {
     display: flex;
     flex-direction: row;

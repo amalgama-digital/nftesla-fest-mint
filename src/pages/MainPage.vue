@@ -30,8 +30,7 @@ function closePopup() {
   <div class="container">
     <VideoBackground />
     <popup-component :popup-show="popupShow">
-      <button class="close" @click="closePopup">
-        <img src="/img/svg/close.svg" alt="X">
+      <button type="button" class="close" @click="closePopup">
       </button>
       <keeper-wallet
         :contract-address="contractAddress"
@@ -57,6 +56,14 @@ function closePopup() {
 </template>
 
 <style scoped>
+@media only screen and (max-width: 810px) {
+  .main {
+    width: 100vw !important;
+    height: 100vh !important;
+    justify-content: center !important;
+    gap: 2rem;
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -71,7 +78,7 @@ function closePopup() {
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  width: 750px;
+  width: 65vw;
   height: 560px;
   border: 1px solid #161616;
   border-radius: 10px;
@@ -84,11 +91,13 @@ function closePopup() {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
+  width: 75%;
 }
 
 .text-container > span {
   display: inline-block;
-  width: 550px;
+  width: auto;
+  max-width: 550px;
   overflow: hidden;
 }
 .price {
@@ -99,13 +108,16 @@ function closePopup() {
 .close {
   display: block;
   position: absolute;
-  top: 0;
+  width: 48px;
+  height: 48px;
+  top: .5rem;
   right: 1rem;
   color: red;
   border: none;
-  padding: 0.8rem;
   text-decoration: underline;
-  background: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/img/svg/close.svg");
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 </style>

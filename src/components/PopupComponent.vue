@@ -25,6 +25,12 @@ watch(
 </template>
 
 <style scoped>
+@media only screen and (max-width: 810px) {
+  .popup__content {
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+}
 .popup {
   display: flex;
   align-items: center;

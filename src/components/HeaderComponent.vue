@@ -5,6 +5,7 @@
             <a id="telegram" href="https://t.me/NFTeslaFest"></a>
             <a id="instagram" href="https://instagram.com/teslafest.nft?igshid=YmMyMTA2M2Y="></a>
             <a id="email" href="mailto:admin@nftesla-fest.com">
+                <img src="/img/svg/icon_mail.svg" alt="">
                 <span class="hideable">admin@nftesla-fest.com</span>
             </a>
         </div>
@@ -13,10 +14,10 @@
 
 <style scoped>
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 1100px) {
     .links > a#email > .hideable {
-    display: none !important;
-}
+        display: none !important;
+    }
 }
 
 .header {
@@ -29,7 +30,7 @@
 .links {
     display: flex;
     justify-content: end;
-    gap: 20px;
+    gap: 15px;
     width: 60%;
 }
 .links > a {
@@ -49,10 +50,11 @@
     background-image: url("/img/svg/icon_inst.svg");
 }
 .links > a#email {
-    background-image: url("/img/svg/icon_mail.svg");
-    background-position-x: left;
-    width: 13.5rem;
-    text-align: end;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    width: fit-content;
+    max-width: 15rem;
 }
 .links > a#email > .hideable {
     display: inline-block;
