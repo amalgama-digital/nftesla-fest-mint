@@ -1,22 +1,32 @@
 <script setup></script>
 
 <template>
-  <button class="btn-mint">Mint NFT</button>
+  <button class="btn-mint">
+    <img class="image" src="/img/svg/button_icon_nft.svg" alt="">
+    MINT NFT
+  </button>
 </template>
 
 <style>
 .btn-mint {
-  width: 30vw;
-  min-height: 3rem;
+  width: 76%;
+  min-height: 70px;
   height: auto;
   cursor: pointer;
-  border: 1px solid red;
-  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  background-color: rgb(255, 0, 0);
   color: white;
-  transition: background-color 0.5s;
+  border: none;
+  border-radius: 40px;
+  position: relative;
+  font-size: 30px;
+  line-height: 39px;
 }
 
-.btn-mint:hover {
-  background-color: red;
+.btn-mint > .image {
+  position: absolute;
+  left: 7px;
+  top: 1rem;
+  width: 36px;
 }
 </style>
