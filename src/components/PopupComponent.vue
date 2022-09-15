@@ -30,7 +30,7 @@ watch(
   align-items: center;
   justify-content: center;
   background-color: rgba(250, 250, 250, 0.11);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
 
   position: absolute;
   width: 100%;

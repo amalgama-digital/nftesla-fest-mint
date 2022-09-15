@@ -3,7 +3,7 @@
         <img src="/img/svg/logo_tf.svg" alt="">
         <div class="links">
             <a id="telegram" href="https://t.me/NFTeslaFest"></a>
-            <a id="instagram" href="https://instagram.com/"></a>
+            <a id="instagram" href="https://instagram.com/teslafest.nft?igshid=YmMyMTA2M2Y="></a>
             <a id="email" href="mailto:admin@nftesla-fest.com">
                 <span class="hideable">admin@nftesla-fest.com</span>
             </a>
@@ -30,7 +30,6 @@
     display: flex;
     justify-content: end;
     gap: 20px;
-    float: right;
     width: 60%;
 }
 .links > a {

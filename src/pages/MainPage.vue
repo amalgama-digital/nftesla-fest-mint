@@ -6,6 +6,7 @@ import KeeperWallet from "../components/wallets/KeeperWallet.vue";
 import PopupComponent from "../components/PopupComponent.vue";
 import VideoBackground from "../components/VideoBackground.vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
 
 // TODO: set to mainnet contract
 // testing: kQAuPQ5pJHIT_yAlVGwrqp148LcmFgRSIIBQj8uQrSlxExOC
@@ -29,7 +30,9 @@ function closePopup() {
   <div class="container">
     <VideoBackground />
     <popup-component :popup-show="popupShow">
-      <button class="close" @click="closePopup">CLOSE</button>
+      <button class="close" @click="closePopup">
+        <img src="/img/svg/close.svg" alt="X">
+      </button>
       <keeper-wallet
         :contract-address="contractAddress"
         :amount="amount"
@@ -48,8 +51,8 @@ function closePopup() {
         </span>
       </div>
       <ButtonMint @click="showPopup" />
+      <FooterComponent />
     </div>
-    <!-- FooterVue -->
   </div>
 </template>
 
