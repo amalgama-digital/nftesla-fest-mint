@@ -9,8 +9,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 import FooterComponent from "../components/FooterComponent.vue";
 
 // TODO: set to mainnet contract
-// testing: kQAuPQ5pJHIT_yAlVGwrqp148LcmFgRSIIBQj8uQrSlxExOC
-const contractAddress = "kQAuPQ5pJHIT_yAlVGwrqp148LcmFgRSIIBQj8uQrSlxExOC";
+const contractAddress = "EQCI5g20sH-rwIczr9_S9Vn316G1774BS9aQTzkEbZQyLQpe";
 
 // TODO: set value
 const amount = 0.07;
