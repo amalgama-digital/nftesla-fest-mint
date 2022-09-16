@@ -17,7 +17,9 @@ function toNanoTon(tons) {
 <template>
   <div class="container">
     <qr-code :url="transferUrl"></qr-code>
-    <a :href="transferUrl">Scan QR code or <b>open with TonKeeper</b></a>
+    <span>
+      Отсканируй QR-код в приложении <b>TonKeeper</b> или <a :href="transferUrl"><b>воспользуйся ссылкой</b></a>
+    </span>
   </div>
 </template>
 
@@ -32,8 +34,13 @@ function toNanoTon(tons) {
   font-size: 16px;
 }
 
-.container > a {
+.container > span {
   color: white;
-  text-decoration: none;
 }
+
+.container a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 </style>
