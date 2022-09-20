@@ -1,8 +1,41 @@
+<script setup>
+import { onMounted, ref } from 'vue';
+
+import TonWeb from 'tonweb';
+
+const props = defineProps([
+    'contractAddress',
+    'providerUrl'
+]);
+
+const tonweb = new TonWeb(new TonWeb.HttpProvider(props.providerUrl));
+
+const collection = new TonWeb.token.nft.NftCollection(
+    tonweb.provider,
+    {address: props.contractAddress}
+);
+
+const items = ref(0);
+
+onMounted(
+    async () => {
+        const cd = await collection.getCollectionData();
+        items.value = cd.nextItemIndex - 1;
+
+        setInterval( async () => {
+            const cd = await collection.getCollectionData();
+            items.value = cd.nextItemIndex - 1;
+        }, 5000);
+    }
+);
+
+</script>
+
 <template>
     <div class="footer">
         <div class="item-count">
             <img src="/img/svg/icon_nft_line.svg" alt="">
-            <span>3888 <span style="color: #f00">из 8888</span></span>
+            <span>{{ items }} <span style="color: #f00">из 8888</span></span>
         </div>
         <div class="sponsors">
             <a href="https://tesla-n.ru/">

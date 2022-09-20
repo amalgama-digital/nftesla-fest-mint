@@ -8,8 +8,12 @@ import VideoBackground from "../components/VideoBackground.vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
 import FooterComponent from "../components/FooterComponent.vue";
 
-// TODO: set to mainnet contract
+// TODO: set to mainnet
+const providerUrl = "https://testnet.toncenter.com/api/v2/jsonRPC"
+
+// TODO: set to mainnet
 const contractAddress = "EQCI5g20sH-rwIczr9_S9Vn316G1774BS9aQTzkEbZQyLQpe";
+const collectionAddress = "EQDrZ4zSv7gRZTZEdluDcrWlo-u4YZprwig0VOdhuP0pgeIl";
 
 // TODO: set value
 const amount = 0.07;
@@ -49,7 +53,10 @@ function closePopup() {
         </span>
       </div>
       <ButtonMint @click="showPopup" />
-      <FooterComponent />
+      <footer-component
+        :contract-address="collectionAddress"
+        :provider-url="providerUrl"
+      ></footer-component>
     </div>
   </div>
 </template>
