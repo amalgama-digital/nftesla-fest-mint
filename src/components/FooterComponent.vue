@@ -20,11 +20,11 @@ const items = ref(0);
 onMounted(
     async () => {
         const cd = await collection.getCollectionData();
-        items.value = cd.nextItemIndex - 1;
+        items.value = cd.nextItemIndex;
 
         setInterval( async () => {
             const cd = await collection.getCollectionData();
-            items.value = cd.nextItemIndex - 1;
+            items.value = cd.nextItemIndex;
         }, 5000);
     }
 );
