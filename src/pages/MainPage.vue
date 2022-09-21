@@ -8,15 +8,14 @@ import VideoBackground from "../components/VideoBackground.vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
 import FooterComponent from "../components/FooterComponent.vue";
 
-// TODO: set to mainnet
-const providerUrl = "https://testnet.toncenter.com/api/v2/jsonRPC"
+const providerUrl = "https://toncenter.com/api/v2/jsonRPC"
 
 // TODO: set to mainnet
-const contractAddress = "EQCI5g20sH-rwIczr9_S9Vn316G1774BS9aQTzkEbZQyLQpe";
-const collectionAddress = "EQDrZ4zSv7gRZTZEdluDcrWlo-u4YZprwig0VOdhuP0pgeIl";
+const contractAddress = "EQBVbnJ8_tLTw98A9Y_8eeo1UlMgBNzeHAmalT-B6-1rsHgB";
+const collectionAddress = "EQCnXQ6HUs_VXXFUeiFWdjhdiy2FblDnJPVvr4GCqnt6aoiq";
 
 // TODO: set value
-const amount = 0.07;
+const amount = 65;
 
 const popupShow = ref("hide");
 
