@@ -10,12 +10,10 @@ import FooterComponent from "../components/FooterComponent.vue";
 
 const providerUrl = "https://toncenter.com/api/v2/jsonRPC"
 
-// TODO: set to mainnet
 const contractAddress = "EQBVbnJ8_tLTw98A9Y_8eeo1UlMgBNzeHAmalT-B6-1rsHgB";
 const collectionAddress = "EQCnXQ6HUs_VXXFUeiFWdjhdiy2FblDnJPVvr4GCqnt6aoiq";
 
-// TODO: set value
-const amount = 65;
+const amount = 60;
 
 const popupShow = ref("hide");
 
