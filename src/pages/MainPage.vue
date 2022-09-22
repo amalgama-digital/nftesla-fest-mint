@@ -41,7 +41,7 @@ function closePopup() {
       <HeaderComponent />
       <div class="text-container">
         <span>
-          Испытай удачу и <span style="color: red;">стань обладателем</span> новенькой <span style="color: red;">TESLA</span>
+          Возьми своего NFT-бурундука и стань обладателем новой <span style="color: red;">TESLA</span>
         </span>
       </div>
       <div class="text-container">
