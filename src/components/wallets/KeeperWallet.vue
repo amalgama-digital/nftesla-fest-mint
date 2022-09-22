@@ -20,6 +20,7 @@ function toNanoTon(tons) {
     <span>
       Отсканируй QR-код в приложении <b>TonKeeper</b> или <a :href="transferUrl"><b>воспользуйся ссылкой</b></a>
     </span>
+    <span><a class="instruction" href="https://telegra.ph/Kak-smintit-Tesla-Fest-NFT-09-21">Инструкция</a></span>
   </div>
 </template>
 
@@ -40,6 +41,10 @@ function toNanoTon(tons) {
 
 .container a {
   color: inherit;
+  text-decoration: underline;
+}
+a.instruction {
+  color: #FF8562;
   text-decoration: underline;
 }
 

@@ -36,7 +36,7 @@ onMounted(
     <div class="footer">
         <div class="item-count">
             <img src="/img/svg/icon_nft_line.svg" alt="">
-            <span>{{ items }} <span style="color: #f00">из 8888</span></span>
+            <span>{{ items }} <span style="color: #f00">осталось из 8888</span></span>
         </div>
         <div class="sponsors">
             <a href="https://tesla-n.ru/">
