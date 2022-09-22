@@ -25,8 +25,8 @@
 
 .btn-mint > .image {
   position: absolute;
-  left: 7px;
-  top: .6rem;
-  width: 50px;
+  left: 10px;
+  top: 10px;
+  width: 48px;
 }
 </style>

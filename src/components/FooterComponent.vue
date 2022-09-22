@@ -19,12 +19,13 @@ const items = ref(0);
 
 onMounted(
     async () => {
+        const total = 8888;
         const cd = await collection.getCollectionData();
-        items.value = cd.nextItemIndex;
+        items.value = total - cd.nextItemIndex;
 
         setInterval( async () => {
             const cd = await collection.getCollectionData();
-            items.value = cd.nextItemIndex;
+            items.value = total - cd.nextItemIndex;
         }, 5000);
     }
 );
