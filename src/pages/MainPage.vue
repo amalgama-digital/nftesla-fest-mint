@@ -46,7 +46,7 @@ function closePopup() {
       </div>
       <div class="text-container">
         <span>
-          Текущая цена <span class="price">65$</span>
+          Текущая цена <span class="price">60 TON</span>
         </span>
       </div>
       <ButtonMint @click="showPopup" />
@@ -74,6 +74,9 @@ function closePopup() {
   align-items: center;
   position: relative;
   height: 100vh;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 .main {
   display: flex;

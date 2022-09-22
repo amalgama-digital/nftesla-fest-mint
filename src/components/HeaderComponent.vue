@@ -14,7 +14,7 @@
 
 <style scoped>
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1060px) {
     .links > a#email > .hideable {
         display: none !important;
     }
@@ -31,10 +31,10 @@
     display: flex;
     justify-content: end;
     gap: 15px;
-    width: 60%;
+    width: 65%;
 }
 .links > a {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     display: block;
     width: 34px;
@@ -52,11 +52,15 @@
 .links > a#email {
     display: flex;
     justify-content: center;
-    gap: .5rem;
+    gap: .3rem;
     width: fit-content;
-    max-width: 15rem;
+    max-width: 20rem;
 }
 .links > a#email > .hideable {
     display: inline-block;
+}
+
+.links > a#email {
+    font-weight: 400;
 }
 </style>
