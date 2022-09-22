@@ -1,6 +1,8 @@
 <template>
     <div class="header">
-        <img src="/img/svg/logo_tf.svg" alt="">
+        <a href="https://nftesla-fest.com/">
+            <img src="/img/svg/logo_tf.svg" alt="">
+        </a>
         <div class="links">
             <a id="telegram" href="https://t.me/NFTeslaFest"></a>
             <a id="instagram" href="https://instagram.com/teslafest.nft?igshid=YmMyMTA2M2Y="></a>
