@@ -10,7 +10,7 @@ import FooterComponent from "../components/FooterComponent.vue";
 
 const providerUrl = "https://toncenter.com/api/v2/jsonRPC"
 
-const contractAddress = "EQBVbnJ8_tLTw98A9Y_8eeo1UlMgBNzeHAmalT-B6-1rsHgB";
+const contractAddress = "EQDjh6CTd-MUxh-E3VLtxELcVDs-FHztDpvOWqHkkp5C-hW1";
 const collectionAddress = "EQCnXQ6HUs_VXXFUeiFWdjhdiy2FblDnJPVvr4GCqnt6aoiq";
 
 const amount = 60;
